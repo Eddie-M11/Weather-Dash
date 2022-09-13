@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Dashboard</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <div class="header-container">
+    <header class="tittle-page">
+      <nav class="navbar">
+        <img
+          src="./assests/weather icon.jpg"
+          alt=""
+          width="60px"
+          height="50px"
+        />
+        <h1>Weather Dashboard</h1>
+      </nav>
+    </header>
+  </div>
+  <body>
+    <section class="seach-sec">
+      <div class="search-box">
+        <input
+          type="search"
+          placeholder="Seach by city or by Zip Code"
+          autocomplete="on"
+          rows="1"
+        />
+        <button class="btn btn-info search-btn text-dark" id="search-btn">
+          Search
+        </button>
+      </div>
+    </section>
+
+    <section class="main-container">
+      <div class="middle-container">
+        <section class="city-info">
+          <div class="city-data" id="main-data"></div>
+        </section>
+      </div>
+    </section>
+
+    <section class="secondary-info">
+      <div class="card-container" id="weather-cards"></div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"
+    ></script>
+    <script type="text/javascript" src="./assets/script.js"></script>
+  </body>
+</html>
